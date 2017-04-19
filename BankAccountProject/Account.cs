@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace BankAccountProject
 {
-    class Account //parent class
+   public class Account //parent class
     {
 
         //fields
-        private string name;
-        private int balance;
+        public string name;
+        public int balance;
 
 
         //properties
@@ -21,10 +21,21 @@ namespace BankAccountProject
             this.balance = 500;
         }
 
-        protected Account(int balance)
+        protected Account(string name, int balance)
         {
-            
+            name = "Jan Hewitt";
+            balance = 500;
         }
+
+
+
+
+        public void ShowBalance()
+        {
+            balance;
+        }
+
+
 
     }
 }

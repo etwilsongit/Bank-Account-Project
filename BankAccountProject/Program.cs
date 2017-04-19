@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace BankAccountProject
 {
-    class Program
+    class Program : Account
     {
         static void Main(string[] args)
         {
 
             //instantiating Jan's bank account
-            //Account janAccount = new Account();
-
+            Account janAccount = new Account
 
             //greet Jan when she opens the program 
             //fun fact: 'Rolyat' is just 'Taylor' backwards, which is my middle name
@@ -61,19 +60,19 @@ namespace BankAccountProject
                                 Console.WriteLine("-Username: \t\t\t\t JanHewitt1895");
                                 Console.WriteLine("-Password Hint: \t\t\t \"What was the name of your first pet?\"");
                                 break;
-                        //case 2:
+                    case 2:
 
-                        //            janAccount.ShowBalance();
-                        //            Console.WriteLine("Your current balance is" + Balance);
-                        //            break;
+                        janAccount.ShowBalance();
+                        Console.WriteLine("Your current balance is" + Account.balance);
+                        break;
                         //        case 3:
 
-                        //            janAccount.BalanceIncrease();
+                        //            janAccount.BalanceDeposit();
                         //            Console.WriteLine("");
                         //            break;
                         //        case 4:
 
-                        //            janAccount.BalanceDecrease();
+                        //            janAccount.BalanceWithdraw();
                         //            Console.WriteLine("");
                         //            break;
                         //        default:
