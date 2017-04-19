@@ -6,36 +6,36 @@ using System.Threading.Tasks;
 
 namespace BankAccountProject
 {
-   public class Account //parent class
+    class Account
     {
+        protected string firstName;
+        protected string lastName;
+        protected double balance;
 
-        //fields
-        public string name;
-        public int balance;
-
-
-        //properties
-        protected Account()
+        public string FirstName
         {
-            this.name = "Jan Hewitt";
-            this.balance = 500;
+            set
+            {
+                firstName = "Jan";
+            }
         }
-
-        protected Account(string name, int balance)
+        public string LastName
         {
-            name = "Jan Hewitt";
-            balance = 500;
+            set
+            {
+                lastName = "Hewitt";
+            }
         }
-
-
-
-
-        public void ShowBalance()
+        public double Balance
         {
-            balance;
+            set
+            {
+                balance = 500;
+            }
         }
-
-
-
+        //public override string ToString()
+        //{
+        //    return firstName + lastName +
+        //}
     }
 }
